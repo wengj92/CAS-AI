@@ -1,0 +1,8 @@
+32 x 32 x 3  (3072) --> conv2d (kernel=5, out=6)  --> 28 x 28 x 6  (4704)
+28 x 28 x 6  (4704) --> max pool 2d (2x2)         --> 14 x 14 x 6  (1176)
+14 x 14 x 5  (1176) --> conv2d (kernel=5, out=16) --> 10 x 10 x 16 (1600)
+10 x 10 x 16 (1600) --> max poold 2d (2x2)        --> 5  x 5  x 16 (400)
+400                 --> linear fc                 --> 120
+120                 --> linear fc                 --> 84
+84                  --> linear fc                 --> 10
+
