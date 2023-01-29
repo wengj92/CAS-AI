@@ -2,7 +2,7 @@ import copy
 import torch
 
 
-def train_model(model, dataloaders, criterion, optimizer, scheduler, num_epochs=25, device='cpu'):
+def train_model(model, dataloaders, dataset_sizes, criterion, optimizer, scheduler, num_epochs=25, device='cpu'):
     # create a copy of the pretrained model
     best_model_wts = copy.deepcopy(model.state_dict())
     # init best accuracy score
@@ -52,7 +52,6 @@ def train_model(model, dataloaders, criterion, optimizer, scheduler, num_epochs=
                 best_acc = epoch_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
     # print message that training is completed
-    print(f'Training complete in {time_elapsed // 60:.0f}m {time_elapsed % 60:.0f}s')
     print(f'Best val Acc: {best_acc:4f}')
     # load best model weights
     model.load_state_dict(best_model_wts)
