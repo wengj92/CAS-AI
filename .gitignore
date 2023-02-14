@@ -8,3 +8,16 @@ Exercises/week_03/data/cifar-10-batches-py/data_batch_3
 Exercises/week_03/data/cifar-10-batches-py/data_batch_2
 Exercises/week_03/data/cifar-10-batches-py/data_batch_1
 Exercises/week_03/data/cifar-10-batches-py/batches.meta
+*.pyc
+.idea/CAS-AI.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+LunarLander/.idea/inspectionProfiles/profiles_settings.xml
+LunarLander/.idea/LunarLander.iml
+LunarLander/.idea/misc.xml
+LunarLander/.idea/modules.xml
+LunarLander/.idea/vcs.xml
+LunarLander/.idea/workspace.xml
